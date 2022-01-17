@@ -1,0 +1,292 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 AvenirNext-Regular;\f1\fnil\fcharset0 AvenirNext-Bold;\f2\fnil\fcharset0 AvenirNext-Medium;
+\f3\fnil\fcharset0 Monaco;\f4\fnil\fcharset0 Menlo-Regular;\f5\fnil\fcharset0 AvenirNext-BoldItalic;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red234\green233\blue255;\red255\green255\blue255;
+\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c93473\c93478\c100000;\cssrgb\c100000\c100000\c99985;
+\cssrgb\c100000\c100000\c99985\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh16380\viewkind0
+\deftab720
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\f0\fs56 \cf2 \expnd0\expndtw0\kerning0
+Introduction\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\fs36 \cf2 Git is the most popular version control system (VCS) in the world and it's hard to imagine what a developer's life would be like without it. Nowadays, the vast majority of developers - including individuals and large companies - choose Git for their projects.\
+The very first question that comes to a beginner is - 
+\f1\b How to use Git
+\f0\b0 ? If you want to benefit from the real power of Git you should start by learning some {\field{\*\fldinst{HYPERLINK "https://acompiler.com/git-best-practices/"}}{\fldrslt 
+\f2 Git best practices}} and essential commands.\
+In this article, I will explain 12 essential {\field{\*\fldinst{HYPERLINK "https://acompiler.com/git-commands/"}}{\fldrslt 
+\f2 Git commands}} that are especially important for beginners. To make your life easy, you can use this post as a Git Cheat Sheet for reference in the future.\
+Now let\'92s dive in.\
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\fs56 \cf2 12 essential Git commands for beginners\
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\fs50\fsmilli25200 \cf2 1) Git Init\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\fs36 \cf2 This is probably the first command you will use when creating a new project. It is used to initialize a new, empty, Git repository. The syntax to use this command is really simple:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 \cb3 git init\
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\f0\fs50\fsmilli25200 \cf2 \cb1 2) Git Clone\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\fs36 \cf2 Oftentimes, you already have an existing Git repository (sometimes hosted on a site like GitHub or Bitbucket) and you want to copy it to your local machine. In this case, the 
+\f4\fs30 \cb3 git clone
+\f0\fs36 \cb1  command is what you'll need. In simple terms, this command is used to create a copy or clone of an existing repository:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 \cb3 git clone [url-to-existing-git-repo]\
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\f0\fs50\fsmilli25200 \cf2 \cb1 3) Git Status\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\fs36 \cf2 Git is always watching for changes in the working directory of your project. This includes changes like creating a new file, adding a file for tracking, deleting a file, changing file permissions, modifying a file name or content, etc. You can list the changes that Git sees at a particular time by using the 
+\f4\fs30 \cb3 git status
+\f0\fs36 \cb1  command:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 \cb3 git status\
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\f0\fs50\fsmilli25200 \cf2 \cb1 4) Git Add\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\fs36 \cf2 Once you make some changes to a file in your working directory and confirm they are correct with the 
+\f4\fs30 \cb3 git status
+\f0\fs36 \cb1  command, it's time to add those changes to Git's 
+\f1\b staging area
+\f0\b0 .\
+You can use the 
+\f4\fs30 \cb3 git add
+\f0\fs36 \cb1  command to add a single file to the staging area at a time:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 \cb3 git add <your-file-name>\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 \cb1 Or, if you have more than one changed file, you can add them all with the 
+\f4\fs30 \cb3 -A
+\f0\fs36 \cb1  option:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 \cb3 git add -A\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 \cb1 Alternatively, you can use a single dot instead of the 
+\f4\fs30 \cb3 -A
+\f0\fs36 \cb1  option:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 \cb3 git add .\
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\f0\fs50\fsmilli25200 \cf2 \cb1 5) Git Commit\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\fs36 \cf2 Once your changes are staged, you can use the 
+\f4\fs30 \cb3 git commit
+\f0\fs36 \cb1  command to save those changes into the Git repository. A {\field{\*\fldinst{HYPERLINK "https://initialcommit.com/blog/What-Is-An-Initial-Commit-In-Git"}}{\fldrslt 
+\f2 Git commit}} is a set of file changes that are stored in Git as one unit.\
+As a part of the this process, you should provide a {\field{\*\fldinst{HYPERLINK "https://initialcommit.com/blog/What-Is-The-Most-Popular-Initial-Commit-Message-In-Git"}}{\fldrslt 
+\f2 clear and concise commit message}}, so other developers can easily understand its purpose:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 \cb3 git commit -m "some useful comment about your change"\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 \cb1 A popular rule of thumb is to {\field{\*\fldinst{HYPERLINK "https://initialcommit.com/blog/Git-Commit-Message-Imperative-Mood"}}{\fldrslt 
+\f2 write commit messages in the imperative mood}}.\
+Here is an image to help you visualize how changes flow from Git's working directory, to the staging area, and are finally committed to the repository:\
+\pard\pardeftab720\li575\fi-576\ri955\sa200\qc\partightenfactor0
+
+\f1\b \cf2 \ul \ulc4 Figure 1: Git Working Direction, Staging Area, and Repository
+\f0\b0 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \ulnone {{\NeXTGraphic git-staging-area.png \width22680 \height18200 \noorient \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\fs50\fsmilli25200 \cf2 6) Git Branch\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\fs36 \cf2 You can think of a Git branch as a chain of commits or a line of development. In reality, a branch name is just a label that points to a specific commit ID. Each commit ID links back to it's parent commit ID which forms a chain of development history.\
+The 
+\f4\fs30 \cb3 git branch
+\f0\fs36 \cb1  command is like a swiss-army knife. It will show all Git branches in the current Git repository. The branch marked with an asterisk is your current branch:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 \cb3 git branch\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 \cb1 To create a new branch, simply use the above command and specify your new branch name:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 \cb3 git branch <new-branch-name>\
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\f0\fs50\fsmilli25200 \cf2 \cb1 7) Git Checkout\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\fs36 \cf2 The 
+\f4\fs30 \cb3 git checkout
+\f0\fs36 \cb1  command allows you to jump (switch) between different branches by updating your working directory to reflect the tip of the checked-out branch:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 \cb3 git checkout <name-of-branch>\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 \cb1 In addition, the 
+\f4\fs30 \cb3 git checkout
+\f0\fs36 \cb1  command can be used to create a new branch and check it out \cb5 at the same time:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 git checkout -b <name-of-branch>\
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\f0\fs50\fsmilli25200 \cf2 8) Git Merge\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\fs36 \cf2 So, now you have completed your work by making several commits on your new branch. What next?\
+Usually, these changes should be merged back into the main code branch, (usually called 
+\f4\fs30 master
+\f0\fs36  by default). We do this using the 
+\f4\fs30 git merge
+\f0\fs36  command:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 git merge <branch-to-merge-from>\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 Note that the 
+\f4\fs30 git merge
+\f0\fs36  command merges commits 
+\f5\i\b from
+\f0\i0\b0  the specified branch 
+\f5\i\b into
+\f0\i0\b0  the currently checked-out branch. So before running the command, you need to check-out the branch that you want to 
+\f1\b merge into
+\f0\b0 .\
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\fs50\fsmilli25200 \cf2 9) Git Push\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\fs36 \cf2 So far, all of the commands we've run have only affected the local environment. Now it's time to share your newly committed changes with other developers by pushing them to the remote repository (often hosted on sites like GitHub and Bitbucket):\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 git push <remote> <name-of-branch>  \
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 As an example, this will often look something like:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 git push origin master\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 In this case, we are pushing the 
+\f4\fs30 master
+\f0\fs36  branch to the remote repository labelled 
+\f4\fs30 origin
+\f0\fs36  (which is the default name for a remote in Git).\
+Once you push your changes, other team members can see them, review them, and pull them into their own local copies of the Git repository.\
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\fs50\fsmilli25200 \cf2 10) Git Pull\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\fs36 \cf2 The 
+\f4\fs30 git pull
+\f0\fs36  command is just the opposite of 
+\f4\fs30 git push
+\f0\fs36 . You can use it to download changes made by other developers into your local repository:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 git pull <remote> <name-of-branch>\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 The above command will download new commits in the specified branch of the remote repository and try to merge them into your local copy of that branch. The actual command will look like the following example using the 
+\f4\fs30 origin
+\f0\fs36  remote and 
+\f4\fs30 master
+\f0\fs36  branch:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 git pull origin master\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 A fun fact is that the 
+\f4\fs30 git pull
+\f0\fs36  command is really just a combination of the 
+\f4\fs30 git fetch
+\f0\fs36  command, which downloads a remote branch to the local repository, and the 
+\f4\fs30 git merge
+\f0\fs36  command, which merges the downloaded branch into the local copy.\
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\fs50\fsmilli25200 \cf2 11) Git Log\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\fs36 \cf2 If you want to view the history of all commits on a Git branch, 
+\f4\fs30 git log
+\f0\fs36  is the solution. The 
+\f4\fs30 git log
+\f0\fs36  command displays an ordered list of all the commits, along with their authors, dates, and commit messages, from newest to oldest:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 git log\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 To list commits from oldest to newest, use the 
+\f4\fs30 --reverse
+\f0\fs36  option:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 git log --reverse\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 If you are a visual person, you may want to try out the following command option which will display a graphical representation of the commit history in your terminal:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 git log --all --graph --decorate\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 This can be useful for seeing how branches diverge and merge back together in the development process.\
+\pard\pardeftab720\li575\fi-576\ri955\sa200\partightenfactor0
+
+\fs50\fsmilli25200 \cf2 12) Git Stash\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\fs36 \cf2 Sometimes, you make some changes to files in your working directory, but then realize you need to work on something else. However, you don't want to lose the work you did so far. In the situation, the 
+\f4\fs30 git stash
+\f0\fs36  command can be used to save all uncommitted changes in the working directory so we can retrieve them later:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 git stash\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 After using 
+\f4\fs30 git stash
+\f0\fs36 , your working copy will be cleaned (all your changes will disappear). But don't worry they aren't lost, 
+\f4\fs30 git stash
+\f0\fs36  simply places those changes in temporary storage which you can retrieve using the 
+\f4\fs30 git stash pop
+\f0\fs36  command:\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs30 \cf2 git stash pop\
+\pard\pardeftab720\li575\fi-576\ri955\sa500\partightenfactor0
+
+\f0\fs36 \cf2 Here the 
+\f4\fs30 pop
+\f0\fs36  subcommand will reapply the last saved state in the stash so you can continue working where you left off.}
